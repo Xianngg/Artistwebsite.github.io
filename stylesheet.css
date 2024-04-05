@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   Framework/Wireframe styles
+   ========================================================================== */
+body{
+     /*the body main background color and font family*/
+    margin: auto;
+    background-color: rgba(53,54,53,1);
+    font-family: 'Muli', sans-serif;
+}
+main{
+    margin: auto;
+    display: flex;
+}
+.col:first-child{
+    width: 20%;
+    height: 95vh;
+    display: flex;
+}
+.col1:first-child{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.logo{
+    font-size: 2.5vw;
+    color: white;
+    /*use the margin to make logo space to move down bit*/
+    margin-top: 9vh;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*I want some space around the logo*/
+    padding: 0.5em;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navrow{
+    width: auto;
+    margin: auto;
+}
+.navcol{
+    height: 4em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    position: relative;
+    z-index: 99;
+}
+.navcollline{
+    /*add a label to the navgation bar*/
+    border-bottom: 0.2em solid #fff;
+}
+.navcol a{
+    overflow: hidden;
+    /*remove lines under navgation links*/
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    color: wheat;
+}
+/*make the navgation hover*/
+.navcol a:hover{
+     border-bottom: 0.2em solid #fff;
+}
+.col1:nth-child(2){
+    width: auto;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+.line{
+    width: 0.2vw;
+    height: 50%;
+    background-color: white;
+    margin: auto;
+}
+.col:nth-child(2){
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    
+}
+.works{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    width: auto;  
+    /*create some space for gallery works*/
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
+.works img{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    width: auto;
+    height: 8vw;
+    /*the white frame of the work*/
+    border: 0.2em solid white;
+}
+.works img:hover{
+    transition: .3s;
+    border: 0.2em solid wheat;
+    box-shadow: 0 0.3em 0.3em 0.3em rgba(53,54,53,1);
+}
+.works a{
+    /*shadows on the background of the work*/
+     box-shadow: 0 0.2em 0.2em 0.2em black; 
+}
+footer{
+    font-size: 0.8em;
+    margin: auto;
+    /*footer gradient effect*/
+    background-image:-webkit-linear-gradient(bottom, rgba(204,204,204,0.7) 10%, rgba(1,1,1,0) 100%);
+}
+.copyright{
+    height: 5vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.facebook{
+    position: fixed;
+    width: 20%;
+    height: 95vh;
+    margin: auto;
+    display: flex;
+}
+.facebook a{ 
+    width: auto;
+    height: 5vh;
+    /*facebook image border*/
+    border: 0.05em solid white;
+    margin: auto;
+    display: flex;
+    margin-bottom: 10vh;
+}
+.facebook a:hover{
+    border: 0.05em solid wheat;
+    transition: .3s;
+}
+/* ==========================================================================
+   about
+========================================================================== */
+.about_main{
+    margin:  auto;
+    width: 70vw;
+    height: 100%; 
+}
+.row:first-child{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.author_portraits{
+    margin:  auto;
+    width: auto;
+    height: auto;
+ 
+}
+/*the size of the author's photo and the space around it*/
+.po1 img{
+    width: 29vh;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    border: 0.1em solid white;
+}
+/*the size of the about text and the space around it,at the bottom the shadow*/
+.text{
+    margin-top: 9vh;
+    height: 41vh;
+    width: 40vw;
+    display: flex;
+    margin-left: 1vh;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em 1em 1em 1em;
+    overflow: hidden;
+    background-image:-webkit-linear-gradient(bottom, rgba(1,1,1,0.2) 0%, rgba(53,54,53,1) 40%);
+}
+p{
+    color: white;
+}
+.po{
+    width: 29vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.po img{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+    
+}
+.po img:nth-child(4){
+    
+    width: 100%;
+    height: 100%;
+}
+/* ==========================================================================
+   lightbox
+========================================================================== */
+.lightbox {
+    /*conceal lightbox*/
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.lightbox img {
+    /*lightbox img size and space*/
+    height: 80%;
+    width: auto;
+    margin-top: 2%;
+}
+
+.lightbox:target {
+    outline: none;
+    /*recover and show the lightbox*/
+    display: block;
+}
+.col a{
+    color: wheat;
+    text-decoration: none;
+}
+/* ==========================================================================
+   home
+========================================================================== */
+.homimg{
+    margin: auto;
+}
+ /*the home imgage size and shadown*/
+.homimg img{
+    min-width: 25vw;
+    border: 0.2em solid white;
+    box-shadow: 0 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.6);
+}
+.homimg img:hover{
+    box-shadow: 0 0.5em 0.5em 0.5em rgba(53,54,53,1);
+    transition: .5s;
+}
